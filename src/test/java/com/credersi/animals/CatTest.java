@@ -22,4 +22,30 @@ public class CatTest {
 		Lynx lynx = new Lynx();
 		assertTrue(lynx.blood());
 	}
+	
+	private int stroke(Purr purrer) {
+		return purrer.purr();
+	}
+	@Test
+	public void testPurr() {
+		Purr cat = new Cat();
+		Purr lynx = new Lynx();
+		assertEquals(this.stroke(cat), 25);
+		assertEquals(this.stroke(lynx), 30);
+	}
+	
+	private boolean Blood(Bite bloody) {
+		return bloody.blood();
+	}
+	@Test
+	public void testBite() {
+		Bite cat = new Cat();
+		Bite lynx = new Lynx();
+		Bite wolf = new Wolf();
+		
+		assertEquals(this.Blood(cat), true);
+		assertEquals(this.Blood(lynx), true);
+		assertEquals(this.Blood(wolf), true);
+	}
+	
 }

@@ -1,6 +1,6 @@
 package com.credersi.animals;
 
-public class Lynx extends Animal implements Purr {
+public class Lynx extends Animal implements Purr, Bite {
 	public Lynx() {	}
 	
 	public int purr() {
