@@ -6,4 +6,10 @@ public class Lynx extends Animal implements Purr {
 	public int purr() {
 		return 30;
 	}
+	public boolean blood() {
+		return true;
+	}
+	public int packSize() {
+		return 4;
+	}
 }

@@ -16,7 +16,9 @@ public class Cat extends Animal implements Purr {
 	public Cat() {
 		this.lives = 9;
 	}
-	
+	public boolean blood() {
+		return true;
+	}
 	public int purr() {
 		return 25;
 	}

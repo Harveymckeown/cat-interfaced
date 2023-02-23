@@ -12,4 +12,14 @@ public class CatTest {
 		assertTrue(cat.isAlive());
 		assertEquals(cat.howHungry(), 50);
 	}
+	@Test
+	public void howl() {
+		Wolf wolf = new Wolf();
+		assertEquals(wolf.howl(), 115);
+	}
+	@Test
+	public void bite() {
+		Lynx lynx = new Lynx();
+		assertTrue(lynx.blood());
+	}
 }
